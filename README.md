@@ -161,8 +161,19 @@ c. Create an instance of it named `bruceBanner`. Make it so that when the transf
 `.notHulk` to `.hulk.``
 
 ```swift
+
+protocol Transformation {
+
+    mutating func transform()
+}
+
 enum SuperHero: Transformation {
-    // write code here.
+    case hulk
+     case notHulk
+    
+    func transform() {
+        
+    }
 }
 
 // Example Output:
